@@ -1,0 +1,8 @@
+{
+  "name": "app-ciitec",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "53d7ee85"
+}
