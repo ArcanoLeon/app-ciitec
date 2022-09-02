@@ -13,6 +13,10 @@ const routes: Routes = [
   },  {
     path: 'bt-test',
     loadChildren: () => import('./page/bt-test/bt-test.module').then( m => m.BtTestPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./page/login/login.module').then( m => m.LoginPageModule)
   }
 
 
