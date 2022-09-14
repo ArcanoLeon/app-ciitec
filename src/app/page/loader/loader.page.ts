@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 /* Este selector nos permite "llamar" (mostrar, no linkear) esta página desde otros lados de la app 
   * sin embargo, si invocamos la página a través de este método, necesitamos declararla en el módulo 
@@ -12,13 +13,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoaderPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
 /* ngOnInit -> "angular On Initiation"
   * es una función que se ejecuta al inicializar la página
 */
 
   ngOnInit() {
+    setTimeout(() => {
+      this.router.navigate(['login']);
+    }, 1000)
   }
 
 }
