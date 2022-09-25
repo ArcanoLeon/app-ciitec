@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuController } from '@ionic/angular';
 
 /* Este selector nos permite "llamar" (mostrar, no linkear) esta página desde otros lados de la app 
   * sin embargo, si invocamos la página a través de este método, necesitamos declararla en el módulo 
@@ -13,16 +14,21 @@ import { Router } from '@angular/router';
 })
 export class LoaderPage implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    public menuCtrl: MenuController
+    ) { }
 
 /* ngOnInit -> "angular On Initiation"
   * es una función que se ejecuta al inicializar la página
 */
 
   ngOnInit() {
+    this.menuCtrl.enable(false);
     setTimeout(() => {
       this.router.navigate(['login']);
-    }, 1000)
+    }, 1000);
+
   }
 
 }

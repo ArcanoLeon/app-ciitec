@@ -10,7 +10,8 @@ const routes: Routes = [
   {
     path: 'loader',
     loadChildren: () => import('./page/loader/loader.module').then( m => m.LoaderPageModule)
-  },  {
+  },
+  {
     path: 'bt-test',
     loadChildren: () => import('./page/bt-test/bt-test.module').then( m => m.BtTestPageModule)
   },

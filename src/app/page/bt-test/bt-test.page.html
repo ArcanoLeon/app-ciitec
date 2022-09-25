@@ -1,9 +1,17 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>bt-test</ion-title>
+    <ion-title>
+      bt-test
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true" class="bgn">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">bt-test</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>

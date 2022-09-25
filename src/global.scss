@@ -32,15 +32,8 @@
     height: 100%;
 }
 
-.flex-center-no-resize{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .bgn{
-    --background: url("C:/Users/LeoAr/app-ciitec/src/app/img/dirGralIPN.jpg");
+    --background: url("~src/app/img/dirGralIPN.jpg");
 }
 
 .ion-color-ipn {
