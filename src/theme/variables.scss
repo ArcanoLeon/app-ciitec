@@ -3,13 +3,29 @@
 
 /** Ionic CSS Variables **/
 :root {
-  /** Colores IPN **/
+  /** Colores IPN **/ 
   --ion-color-ipn: #6e1742;
 	--ion-color-ipn-rgb: 110,23,66;
 	--ion-color-ipn-contrast: #ffffff;
 	--ion-color-ipn-contrast-rgb: 255,255,255;
 	--ion-color-ipn-shade: #61143a;
   --ion-color-ipn-tint: #7d2e55;
+
+  /** Colores IPN claros **/
+  --ion-color-ipn-claro: #a73d72;
+	--ion-color-ipn-claro-rgb: 167,61,114;
+	--ion-color-ipn-claro-contrast: #ffffff;
+	--ion-color-ipn-claro-contrast-rgb: 255,255,255;
+	--ion-color-ipn-claro-shade: #933664;
+	--ion-color-ipn-claro-tint: #b05080;
+
+  /** Colores IPN invertidos **/
+  --ion-color-ipn-invertido: #ffffff;
+	--ion-color-ipn-invertido-rgb: 255,255,255;
+	--ion-color-ipn-invertido-contrast: #6e1742;
+	--ion-color-ipn-invertido-contrast-rgb: 110,23,66;
+	--ion-color-ipn-invertido-shade: #61143a;
+  --ion-color-ipn-invertido-tint: #7d2e55;
 
   /** primary **/
   --ion-color-primary: #eb445a;

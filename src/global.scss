@@ -44,3 +44,21 @@
 	--ion-color-shade: var(--ion-color-ipn-shade);
 	--ion-color-tint: var(--ion-color-ipn-tint);
 }
+
+.ion-color-ipn-claro {
+	--ion-color-base: var(--ion-color-ipn-claro);
+	--ion-color-base-rgb: var(--ion-color-ipn-claro-rgb);
+	--ion-color-contrast: var(--ion-color-ipn-claro-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-ipn-claro-contrast-rgb);
+	--ion-color-shade: var(--ion-color-ipn-claro-shade);
+	--ion-color-tint: var(--ion-color-ipn-claro-tint);
+}
+
+.ion-color-ipn-invertido {
+	--ion-color-base: var(--ion-color-ipn-invertido);
+	--ion-color-base-rgb: var(--ion-color-ipn-invertido-rgb);
+	--ion-color-contrast: var(--ion-color-ipn-invertido-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-ipn-invertido-contrast-rgb);
+	--ion-color-shade: var(--ion-color-ipn-invertido-shade);
+	--ion-color-tint: var(--ion-color-ipn-invertido-tint);
+}

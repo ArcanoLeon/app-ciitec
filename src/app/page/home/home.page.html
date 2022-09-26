@@ -1,14 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Diabetómetro
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content class="bgn">
 
   <ion-card color="ipn">
     <ion-card-header>
-      <ion-card-title>Aviso</ion-card-title>
+      <ion-card-title>¡Bienvenida/o!</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
       Esta es la app de Diabetómetro de CIITEC
     </ion-card-content>
   </ion-card>
+
+  <ion-card color="ipn-invertido">
+    <ion-card-header>
+      <ion-card-title>Haz una prueba de aliento</ion-card-title>
+    </ion-card-header>
   
+    <ion-card-content>
+      Registra tus datos de aliento cetónico 
+      <ion-button size="large" color="ipn-claro" class="center-button">
+        <ion-icon class="big-icon-button" name="bluetooth-outline" slot="start"></ion-icon>
+        Realizar prueba
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="ipn">
+    <ion-card-header>
+      <ion-card-title>Registro de datos</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Revisa tus datos registrados a través del tiempo
+      <ion-button size="large" color="ipn-invertido" class="center-button">
+        <ion-icon class="big-icon-button" name="bar-chart-outline" slot="start"></ion-icon>
+        Registro de datos
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card color="ipn-claro">
+    <ion-card-header>
+      <ion-card-title>¿Tienes dudas?</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Lee preguntas frecuentes o escribe tu pregunta ¡Pronto te responderemos!
+      <ion-button size="large" color="ipn" class="center-button">
+        <ion-icon class="big-icon-button" name="help-circle-outline" slot="start"></ion-icon>
+        Pregúntanos
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="ipn">
+    <ion-card-content>
+      <ion-icon name="heart"></ion-icon>
+    </ion-card-content>
+  </ion-card>
   
 </ion-content>
