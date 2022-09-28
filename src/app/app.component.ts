@@ -8,18 +8,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   public appPages = [];
   constructor(
-    private router: Router
+
   ) {}
 
-  goToProfile() {
-    this.router.navigate(['profile'])
-  }
-
-  goToBlog() {
-    this.router.navigate(['blog'])
-  }
-
-  goToLogs() {
-    this.router.navigate(['logpage'])
-  }
 }

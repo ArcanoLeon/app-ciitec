@@ -15,7 +15,18 @@ export class HomePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.menuCtrl.enable(true);
+  }
+  
+  goToProfile() {
+    this.router.navigate(['profile'])
+  }
+
+  goToBlog() {
+    this.router.navigate(['blog'])
+  }
+
+  goToLogs() {
+    this.router.navigate(['logpage'])
   }
 
   goToDevice() {

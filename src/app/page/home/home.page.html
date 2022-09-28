@@ -1,66 +1,93 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Diabetómetro
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-split-pane contentId="main-content">
 
-<ion-content class="bgn">
+  <ion-menu contentId="main-content" type="overlay">
+    <ion-content>
+      <ion-list>
+        <ion-list-header>DiabeteX</ion-list-header>
+        <ion-note>App by CIITEC-IPN</ion-note>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button lines="none" detail="false" (click)="goToProfile()">
+            <ion-icon name="person" color="ipn-invertido" slot="start"></ion-icon>
+            <ion-label>Perfil</ion-label>
+          </ion-item>
+          <ion-item button lines="none" detail="false" (click)="goToBlog()">
+            <ion-icon name="information-circle" color="ipn-invertido" slot="start"></ion-icon>
+            <ion-label>Blog</ion-label>
+          </ion-item>
+          <ion-item button lines="none" detail="false" (click)="goToLogs()">
+            <ion-icon name="reader" color="ipn-invertido" slot="start"></ion-icon>
+            <ion-label>Bitácora</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+     </ion-list>
+    </ion-content>
+  </ion-menu>
 
-  <ion-card color="ipn">
-    <ion-card-header>
-      <ion-card-title>¡Bienvenida/o!</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Esta es la app de Diabetómetro de CIITEC
-    </ion-card-content>
-  </ion-card>
+  <ion-content class="bgn" id="main-content">
 
-  <ion-card color="ipn-invertido">
-    <ion-card-header>
-      <ion-card-title>Haz una prueba de aliento</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Registra tus datos de aliento cetónico 
-      <ion-button size="large" color="ipn-claro" class="center-button" (click)="goToDevice()">
-        <ion-icon class="big-icon-button" name="bluetooth-outline" slot="start"></ion-icon>
-        Realizar prueba
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+          Diabetómetro
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-  <ion-card color="ipn">
-    <ion-card-header>
-      <ion-card-title>Registro de datos</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Revisa tus datos registrados a través del tiempo
-      <ion-button size="large" color="ipn-invertido" class="center-button" (click)="goToResults()">
-        <ion-icon class="big-icon-button" name="bar-chart-outline" slot="start"></ion-icon>
-        Registro de datos
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
+    <ion-card color="ipn">
+      <ion-card-header>
+        <ion-card-title>¡Bienvenida/o!</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Esta es la app de Diabetómetro de CIITEC
+      </ion-card-content>
+    </ion-card>
 
-  <ion-card color="ipn-claro">
-    <ion-card-header>
-      <ion-card-title>¿Tienes dudas?</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Lee preguntas frecuentes o escribe tu pregunta ¡Pronto te responderemos!
-      <ion-button size="large" color="ipn" class="center-button" (click)="goToQuestions()">
-        <ion-icon class="big-icon-button" name="help-circle-outline" slot="start"></ion-icon>
-        Pregúntanos
-      </ion-button>
-    </ion-card-content>
-  </ion-card>
-  
-</ion-content>
+    <ion-card color="ipn-invertido">
+      <ion-card-header>
+        <ion-card-title>Haz una prueba de aliento</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Registra tus datos de aliento cetónico 
+        <ion-button size="large" color="ipn-claro" class="center-button" (click)="goToDevice()">
+          <ion-icon class="big-icon-button" name="bluetooth-outline" slot="start"></ion-icon>
+          Realizar prueba
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="ipn">
+      <ion-card-header>
+        <ion-card-title>Registro de datos</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Revisa tus datos registrados a través del tiempo
+        <ion-button size="large" color="ipn-invertido" class="center-button" (click)="goToResults()">
+          <ion-icon class="big-icon-button" name="bar-chart-outline" slot="start"></ion-icon>
+          Registro de datos
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card color="ipn-claro">
+      <ion-card-header>
+        <ion-card-title>¿Tienes dudas?</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Lee preguntas frecuentes o escribe tu pregunta ¡Pronto te responderemos!
+        <ion-button size="large" color="ipn" class="center-button" (click)="goToQuestions()">
+          <ion-icon class="big-icon-button" name="help-circle-outline" slot="start"></ion-icon>
+          Pregúntanos
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+    
+  </ion-content>
+
+</ion-split-pane>

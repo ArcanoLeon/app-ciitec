@@ -13,7 +13,6 @@ export class ProfilePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.menuCtrl.enable(false);
   }
 
 }

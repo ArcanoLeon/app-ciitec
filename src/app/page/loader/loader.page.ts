@@ -24,7 +24,6 @@ export class LoaderPage implements OnInit {
 */
 
   ngOnInit() {
-    this.menuCtrl.enable(false);
     setTimeout(() => {
       this.router.navigate(['login']);
     }, 1000);
