@@ -4,16 +4,29 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-      bt-test
+      Haz una prueba
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="bgn">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">bt-test</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="bgn">
 
+  <ion-card color="ipn">
+    <img src="https://wl-genial.cf.tsp.li/resize/728x/jpg/048/cd5/35e9fa57e699fcca60e127a16c.jpg" />
+    <ion-card-content>
+      Necesitas conectar el dispoitivo para realizar la prueba. (Debes activar el Bluetooth de tu dispositivo):
+
+      <p>1.-Mantén presionado el botón azul en el dispositivo como se muestra en la imagen,
+      una luz azul comenzará a parpadear.</p>
+
+      <p>2.-Toca el botón "CONECTAR" en la parte inferior.</p>
+
+      <p>3.-La luz azul dejará de parapadear y se mantendrá encendida por 5 segundos. Esto significa que el dispositivo ya está enlazado.</p>
+      <ion-button size="large" color="ipn-claro" class="center-button">
+        <ion-icon class="big-icon-button" name="bluetooth-outline" slot="start"></ion-icon>
+        CONECTAR
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+  
 </ion-content>
