@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router'
 import { MenuController } from '@ionic/angular';
 
 @Component({
@@ -10,6 +10,7 @@ import { MenuController } from '@ionic/angular';
 export class HomePage implements OnInit {
 
   constructor(
+    private router: Router,
     public menuCtrl: MenuController
   ) { }
 
@@ -17,4 +18,15 @@ export class HomePage implements OnInit {
     this.menuCtrl.enable(true);
   }
 
+  goToDevice() {
+    this.router.navigate(['bt-test'])
+  }
+
+  goToResults() {
+    this.router.navigate(['results'])
+  }
+
+  goToQuestions() {
+    this.router.navigate(['questions'])
+  }
 }

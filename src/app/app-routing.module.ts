@@ -26,7 +26,27 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./page/home/home.module').then( m => m.HomePageModule)
+  },  {
+    path: 'profile',
+    loadChildren: () => import('./page/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'blog',
+    loadChildren: () => import('./page/blog/blog.module').then( m => m.BlogPageModule)
+  },
+  {
+    path: 'logpage',
+    loadChildren: () => import('./page/logpage/logpage.module').then( m => m.LogpagePageModule)
+  },
+  {
+    path: 'results',
+    loadChildren: () => import('./page/results/results.module').then( m => m.ResultsPageModule)
+  },
+  {
+    path: 'questions',
+    loadChildren: () => import('./page/questions/questions.module').then( m => m.QuestionsPageModule)
   }
+
 
 
 ];
