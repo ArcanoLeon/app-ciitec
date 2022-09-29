@@ -8,6 +8,8 @@ import { ResultsPageRoutingModule } from './results-routing.module';
 
 import { ResultsPage } from './results.page';
 
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,7 @@ import { ResultsPage } from './results.page';
     IonicModule,
     ResultsPageRoutingModule
   ],
-  declarations: [ResultsPage]
+  declarations: [ResultsPage],
+  providers: [ NgChartsModule ]
 })
 export class ResultsPageModule {}

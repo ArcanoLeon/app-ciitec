@@ -7,10 +7,14 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="bgn">
+<ion-content [fullscreen]="true" class="bgn">
+  <ion-card color="ipn-invertido" (click)="generarGraf()">
+    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+      <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+  </ion-card>
 
   <ion-card color="ipn">
-    <img src="https://cdn.dribbble.com/users/72548/screenshots/713796/bar_chart.png?compress=1&resize=400x300&vertical=top" />
     <ion-card-content>
       <ion-card-header>
         <ion-card-subtitle>Tu última lectura fue:</ion-card-subtitle>
