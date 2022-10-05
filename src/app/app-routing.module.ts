@@ -45,6 +45,10 @@ const routes: Routes = [
   {
     path: 'questions',
     loadChildren: () => import('./page/questions/questions.module').then( m => m.QuestionsPageModule)
+  },
+  {
+    path: 'recover-password',
+    loadChildren: () => import('./page/recover-password/recover-password.module').then( m => m.RecoverPasswordPageModule)
   }
 
 

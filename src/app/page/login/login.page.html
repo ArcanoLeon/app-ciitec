@@ -15,9 +15,9 @@
           <ion-input type="pssword"></ion-input>
         </ion-item>     
         <ion-button size="block" (click)="login()">Ingresar</ion-button>
-        <ion-button fill="clear">¿Olvidaste tu contraseña?</ion-button>   
+        <ion-button fill="clear" (click)="recoverPassword()">¿Olvidaste tu contraseña?</ion-button>   
         <p class="center-text">¿Aún no tienes una cuenta?</p>
-        <ion-button size="block">Regístrate</ion-button>
+        <ion-button size="block" (click)="register()">Regístrate</ion-button>
       </ion-card-content>
     </ion-card>
   </div>
