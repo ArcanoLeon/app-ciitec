@@ -26,6 +26,20 @@
         <ion-icon class="big-icon-button" name="bluetooth-outline" slot="start"></ion-icon>
         CONECTAR
       </ion-button>
+      
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-button (click)="activarBluetooth()"> Buscar </ion-button>
+    </ion-card-header>
+    <ion-card-content>
+      <div *ngFor="let data of devices">
+        <p>{{data.name}}</p>
+        <p>{{data.id}}</p>
+        <button (click)="btConnect(data.address)"> Conectar </button>
+      </div>
     </ion-card-content>
   </ion-card>
 

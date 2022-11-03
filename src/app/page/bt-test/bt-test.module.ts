@@ -8,6 +8,8 @@ import { BtTestPageRoutingModule } from './bt-test-routing.module';
 
 import { BtTestPage } from './bt-test.page';
 
+import { BluetoothSerial } from '@awesome-cordova-plugins/bluetooth-serial/ngx';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,9 @@ import { BtTestPage } from './bt-test.page';
     IonicModule,
     BtTestPageRoutingModule
   ],
-  declarations: [BtTestPage]
+  declarations: [BtTestPage],
+  providers: [
+    BluetoothSerial
+  ]
 })
 export class BtTestPageModule {}
