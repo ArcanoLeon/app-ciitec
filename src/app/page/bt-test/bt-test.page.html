@@ -35,11 +35,17 @@
       <ion-button (click)="activarBluetooth()"> Buscar </ion-button>
     </ion-card-header>
     <ion-card-content>
-      <div *ngFor="let data of devices">
-        <p>{{data.name}}</p>
-        <p>{{data.id}}</p>
-        <button (click)="btConnect(data.address)"> Conectar </button>
-      </div>
+      <div *ngIf="devices==[]; then deviceList else emptylist"></div>
+        <ion-list #deviceList>
+          <ion-item *ngFor="let device of devices" (click)="btConnect(data.address)">
+            <ion-icon name="bluetooth"></ion-icon>
+            <ion-label>
+              <h1>{{ device.name }}</h1>
+              <p>{{ data.id }}</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+        <h2 #emptyList>No se encontraron dispositivos</h2>
     </ion-card-content>
   </ion-card>
 
